@@ -22,3 +22,29 @@ circle{
     fill:RoyalBlue;
     opacity:0.6;
 }
+
+
+circle.timeSquare{
+    stroke:black;
+    stroke-width:0.5px;
+    fill: #37e100;
+    opacity:0.6;
+}
+
+circle.grandCentral{
+    stroke:black;
+    stroke-width:0.5px;
+    fill: #e1486a;
+    opacity:0.6;
+}
+
+.time-line{
+    fill: none;
+    stroke: #37e100;
+}
+
+.grand-central{
+    fill: none;
+    stroke: #e1486a;
+    opacity: 0.5;
+}
