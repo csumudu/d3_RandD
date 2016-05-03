@@ -19,6 +19,25 @@ Released under the MIT license: http://jsbin.mit-license.org
 </head>
 <body>
 
+<h1>INTERACTIVE GRAPH</h1>
+<div class="d3-svg-interactive-graph">
+  <div id="graph-container" style="background-color: #37e100;float: left; width: 80%" >
+    <svg>
+      <g></g>
+    </svg>
+  </div>
+  <div id="keys" style="background-color: #e1486a;float: right;width: 20%">
+    <div class="key_line">
+      <div class="key_square">s
+      </div>
+      <div class="key_label">s
+      </div>
+
+    </div>
+  </div>
+  <div style="clear: both"></div>
+</div>
+
 <h1>SVG LINE GRAPH</h1>
 <div class="d3-svg-line-graph"></div>
 
@@ -36,5 +55,6 @@ Released under the MIT license: http://jsbin.mit-license.org
 <script src="js/bar.js"></script>
 <script src="js/svg_graph.js"></script>
 <script src="js/line_graph.js"></script>
+<script src="js/interactive_graph.js"></script>
 </body>
 </html>

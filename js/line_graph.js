@@ -36,6 +36,7 @@
             .append('svg')
                 .attr('width',width)
                 .attr('height',height)
+                .attr('class','line-grp-svg')
             .selectAll('circle.timeSquare')
             .data(data.times_square)
             .enter()
@@ -50,7 +51,7 @@
             .attr('r',5);
 
         //Render Grand Central dots
-        d3.select('svg')
+        d3.select('svg.line-grp-svg')
             .selectAll('circle.grandCentral')
             .data(data.grand_central)
             .enter()
@@ -67,7 +68,7 @@
         //Draw x - axis
         var x_axis = d3.svg.axis().scale(x_scale).ticks(d3.time.day, 1).tickFormat(d3.time.format("%a/%d"));
 
-        d3.select('svg')
+        d3.select('svg.line-grp-svg')
             .append('g')
             .attr('class','x-axis')
             .attr('transform','translate(0,'+ (height-margin)+')')
@@ -75,7 +76,7 @@
 
         //draw y_axis
         var y_axis = d3.svg.axis().scale(y_scale).orient('left');
-        d3.select('svg')
+        d3.select('svg.line-grp-svg')
             .append('g')
             .attr('class','y-axis')
             .attr('transform','translate('+margin+',0)')
@@ -86,12 +87,12 @@
             .x(function(d){return x_scale(d.time)})
             .y(function(d){return y_scale(d.count)});
 
-        d3.select('svg')
+        d3.select('svg.line-grp-svg')
             .append('path')
             .attr('d',drawPath(data.times_square))
             .attr('class','time-line')
 
-        d3.select('svg')
+        d3.select('svg.line-grp-svg')
             .append('path')
             .attr('d',drawPath(data.grand_central))
             .attr('class','grand-central')

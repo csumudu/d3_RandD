@@ -34,6 +34,7 @@
             .append('svg')
                 .attr('width' , width)
                 .attr('height',height)
+            .attr('class','bar-svg')
 
             .selectAll('circle')
             .data(data)
@@ -44,14 +45,14 @@
                 .attr('r',5);
 
         //draw x axis
-        d3.select('svg')
+        d3.select('svg.bar-svg')
             .append('g')
                 .attr('class','x-axis')
                 .attr("transform", "translate(0," + (height-margin) + ")")
             .call(x_axis);
 
         //Draw y axis
-        d3.select('svg')
+        d3.select('svg.bar-svg')
             .append('g')
                 .attr('class','y-axis')
                 .attr('transform','translate('+margin+',0)')

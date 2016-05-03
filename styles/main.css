@@ -48,3 +48,25 @@ circle.grandCentral{
     stroke: #e1486a;
     opacity: 0.5;
 }
+
+.squre{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.line-label{
+    float: right;
+}
+
+.line-label:after{
+    clear: both;
+}
+.key_line:after{
+    clear: both;
+}
+
+.clear-me{
+    clear: both;
+}
