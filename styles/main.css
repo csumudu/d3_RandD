@@ -54,17 +54,15 @@ circle.grandCentral{
     width: 20px;
     height: 20px;
     background-color: red;
+    margin: 0px 10px;
 }
 
 .line-label{
-    float: right;
+    float: left;
 }
 
-.line-label:after{
-    clear: both;
-}
-.key_line:after{
-    clear: both;
+.key_line{
+    margin: 5px;
 }
 
 .clear-me{
